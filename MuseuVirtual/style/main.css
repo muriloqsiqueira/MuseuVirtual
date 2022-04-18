@@ -1,0 +1,153 @@
+:root{
+/* DEFININDO VARIÁVEIS DE CORES */
+    --vermelho:#E50914;
+    --pretop: rgb(0, 0, 0);
+    --creme: rgba(235, 235, 167, 0.937);
+    --preta:#141414;
+    --green: #3e4b26;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--creme);
+    font-family: 'arial', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--pretop);
+    font-family: 'Arial black', 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('https://abussolaquebrada.files.wordpress.com/2017/01/etomologia-fiocruz-a-bussola-quebrada.jpg?w=620');
+    color: white;
+    height: 500px;    
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 10px 20px;
+    margin-left: 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .comtainer{
+    width: 70%;
+}
+
+.box-filme{
+    height: 30%;
+    width: 30%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.box-banner{
+    height: 50%;
+    width: 50%;
+    display: block;
+}
+
+.ordem-banner{
+    background-color: var(--green);
+    color: white;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--green);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: black;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.myFooter{
+    background-color: var(--green);
+    color: black;
+    
+}
+
+.container-footer{
+    color: white;
+}
